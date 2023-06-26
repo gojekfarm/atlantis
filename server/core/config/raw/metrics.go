@@ -3,7 +3,7 @@ package raw
 import (
 	validation "github.com/go-ozzo/ozzo-validation"
 	"github.com/go-ozzo/ozzo-validation/is"
-	"github.com/runatlantis/atlantis/server/core/config/valid"
+	"github.com/gojekfarm/atlantis/server/core/config/valid"
 )
 
 type Metrics struct {

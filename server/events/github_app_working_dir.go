@@ -6,9 +6,9 @@ import (
 
 	"github.com/mitchellh/go-homedir"
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/events/vcs"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/events/vcs"
+	"github.com/gojekfarm/atlantis/server/logging"
 )
 
 // GithubAppWorkingDir implements WorkingDir.

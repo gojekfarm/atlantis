@@ -4,9 +4,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/models"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestCommandResult_HasErrors(t *testing.T) {

@@ -6,7 +6,7 @@ import (
 
 	"github.com/petergtz/pegomock"
 
-	valid "github.com/runatlantis/atlantis/server/core/config/valid"
+	valid "github.com/gojekfarm/atlantis/server/core/config/valid"
 )
 
 func AnyValidPolicySet() valid.PolicySet {

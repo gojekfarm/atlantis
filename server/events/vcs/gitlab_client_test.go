@@ -8,11 +8,11 @@ import (
 	"testing"
 
 	version "github.com/hashicorp/go-version"
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/logging"
 	gitlab "github.com/xanzy/go-gitlab"
 
-	. "github.com/runatlantis/atlantis/testing"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 // Test that the base url gets set properly.

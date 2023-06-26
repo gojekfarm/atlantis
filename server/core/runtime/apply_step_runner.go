@@ -10,8 +10,8 @@ import (
 	"github.com/pkg/errors"
 
 	version "github.com/hashicorp/go-version"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/models"
 )
 
 // ApplyStepRunner runs `terraform apply`.

@@ -7,7 +7,7 @@ import (
 
 	validation "github.com/go-ozzo/ozzo-validation"
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/core/config/valid"
+	"github.com/gojekfarm/atlantis/server/core/config/valid"
 )
 
 // GlobalCfg is the raw schema for server-side repo config.

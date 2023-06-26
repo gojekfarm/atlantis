@@ -5,7 +5,7 @@ import (
 
 	"github.com/hashicorp/go-version"
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/command"
 )
 
 // MinimumVersionStepRunnerDelegate ensures that a given step runner can't run unless the command version being used

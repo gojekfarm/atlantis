@@ -9,8 +9,8 @@ import (
 
 	go_version "github.com/hashicorp/go-version"
 	pegomock "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/events/command"
-	logging "github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	logging "github.com/gojekfarm/atlantis/server/logging"
 )
 
 type MockVersionedExecutorWorkflow struct {

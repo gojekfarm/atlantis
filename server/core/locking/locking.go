@@ -22,8 +22,8 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/models"
 )
 
 //go:generate pegomock generate -m --use-experimental-model-gen --package mocks -o mocks/mock_backend.go Backend

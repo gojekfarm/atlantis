@@ -5,9 +5,9 @@ import (
 	"strings"
 
 	"github.com/hashicorp/go-version"
-	"github.com/runatlantis/atlantis/server/core/config/valid"
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/core/config/valid"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/logging"
 	"github.com/uber-go/tally"
 )
 

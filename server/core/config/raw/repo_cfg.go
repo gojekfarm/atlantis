@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	validation "github.com/go-ozzo/ozzo-validation"
-	"github.com/runatlantis/atlantis/server/core/config/valid"
+	"github.com/gojekfarm/atlantis/server/core/config/valid"
 )
 
 // DefaultAutomerge is the default setting for automerge.

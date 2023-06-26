@@ -5,7 +5,7 @@ import (
 	"github.com/petergtz/pegomock"
 	"reflect"
 
-	locking "github.com/runatlantis/atlantis/server/core/locking"
+	locking "github.com/gojekfarm/atlantis/server/core/locking"
 )
 
 func AnyLockingTryLockResponse() locking.TryLockResponse {

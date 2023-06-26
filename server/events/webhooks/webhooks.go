@@ -19,8 +19,8 @@ import (
 
 	"errors"
 
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/logging"
 )
 
 const SlackKind = "slack"

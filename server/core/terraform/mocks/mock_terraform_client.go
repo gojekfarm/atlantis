@@ -6,8 +6,8 @@ package mocks
 import (
 	go_version "github.com/hashicorp/go-version"
 	pegomock "github.com/petergtz/pegomock"
-	command "github.com/runatlantis/atlantis/server/events/command"
-	logging "github.com/runatlantis/atlantis/server/logging"
+	command "github.com/gojekfarm/atlantis/server/events/command"
+	logging "github.com/gojekfarm/atlantis/server/logging"
 	"reflect"
 	"time"
 )

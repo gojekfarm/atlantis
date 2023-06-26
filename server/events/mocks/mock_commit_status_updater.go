@@ -8,8 +8,8 @@ import (
 	"time"
 
 	pegomock "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/events/command"
-	models "github.com/runatlantis/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	models "github.com/gojekfarm/atlantis/server/events/models"
 )
 
 type MockCommitStatusUpdater struct {

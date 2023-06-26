@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	validation "github.com/go-ozzo/ozzo-validation"
-	"github.com/runatlantis/atlantis/server/core/config/raw"
-	"github.com/runatlantis/atlantis/server/core/config/valid"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/core/config/raw"
+	"github.com/gojekfarm/atlantis/server/core/config/valid"
+	. "github.com/gojekfarm/atlantis/testing"
 	yaml "gopkg.in/yaml.v2"
 )
 

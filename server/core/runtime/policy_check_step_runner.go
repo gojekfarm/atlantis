@@ -3,7 +3,7 @@ package runtime
 import (
 	"github.com/hashicorp/go-version"
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/command"
 )
 
 // PolicyCheckStepRunner runs a policy check command given a ctx

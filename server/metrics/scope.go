@@ -7,8 +7,8 @@ import (
 
 	"github.com/cactus/go-statsd-client/statsd"
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/core/config/valid"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/core/config/valid"
+	"github.com/gojekfarm/atlantis/server/logging"
 	"github.com/uber-go/tally"
 	tallyprom "github.com/uber-go/tally/prometheus"
 	tallystatsd "github.com/uber-go/tally/statsd"

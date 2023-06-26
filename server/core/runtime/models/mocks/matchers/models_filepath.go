@@ -6,7 +6,7 @@ import (
 
 	"github.com/petergtz/pegomock"
 
-	models "github.com/runatlantis/atlantis/server/core/runtime/models"
+	models "github.com/gojekfarm/atlantis/server/core/runtime/models"
 )
 
 func AnyModelsFilePath() models.FilePath {

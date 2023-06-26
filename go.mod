@@ -1,4 +1,4 @@
-module github.com/runatlantis/atlantis
+module github.com/gojekfarm/atlantis
 
 go 1.17
 

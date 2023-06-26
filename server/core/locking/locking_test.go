@@ -21,12 +21,12 @@ import (
 	"strings"
 
 	. "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/core/locking"
-	"github.com/runatlantis/atlantis/server/core/locking/mocks"
-	"github.com/runatlantis/atlantis/server/core/locking/mocks/matchers"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/models"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/core/locking"
+	"github.com/gojekfarm/atlantis/server/core/locking/mocks"
+	"github.com/gojekfarm/atlantis/server/core/locking/mocks/matchers"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 var project = models.NewProject("owner/repo", "path")

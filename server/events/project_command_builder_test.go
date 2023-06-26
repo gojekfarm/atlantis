@@ -8,17 +8,17 @@ import (
 	"testing"
 
 	. "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/core/config"
-	"github.com/runatlantis/atlantis/server/core/config/valid"
-	"github.com/runatlantis/atlantis/server/events"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/matchers"
-	"github.com/runatlantis/atlantis/server/events/mocks"
-	"github.com/runatlantis/atlantis/server/events/models"
-	vcsmocks "github.com/runatlantis/atlantis/server/events/vcs/mocks"
-	"github.com/runatlantis/atlantis/server/logging"
-	"github.com/runatlantis/atlantis/server/metrics"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/core/config"
+	"github.com/gojekfarm/atlantis/server/core/config/valid"
+	"github.com/gojekfarm/atlantis/server/events"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/matchers"
+	"github.com/gojekfarm/atlantis/server/events/mocks"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	vcsmocks "github.com/gojekfarm/atlantis/server/events/vcs/mocks"
+	"github.com/gojekfarm/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/metrics"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestDefaultProjectCommandBuilder_BuildAutoplanCommands(t *testing.T) {

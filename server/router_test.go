@@ -7,10 +7,10 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/gorilla/mux"
-	"github.com/runatlantis/atlantis/server"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/models"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	. "github.com/gojekfarm/atlantis/testing"
 	"github.com/stretchr/testify/assert"
 )
 

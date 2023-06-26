@@ -24,9 +24,9 @@ import (
 	"text/template"
 
 	"github.com/flynn-archive/go-shlex"
-	"github.com/runatlantis/atlantis/server/core/config"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/core/config"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/models"
 	"github.com/spf13/pflag"
 )
 

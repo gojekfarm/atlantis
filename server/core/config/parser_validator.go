@@ -10,8 +10,8 @@ import (
 	shlex "github.com/flynn-archive/go-shlex"
 	validation "github.com/go-ozzo/ozzo-validation"
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/core/config/raw"
-	"github.com/runatlantis/atlantis/server/core/config/valid"
+	"github.com/gojekfarm/atlantis/server/core/config/raw"
+	"github.com/gojekfarm/atlantis/server/core/config/valid"
 	yaml "gopkg.in/yaml.v2"
 )
 

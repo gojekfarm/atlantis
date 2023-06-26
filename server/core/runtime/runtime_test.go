@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/runatlantis/atlantis/server/core/runtime"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/core/runtime"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestGetPlanFilename(t *testing.T) {

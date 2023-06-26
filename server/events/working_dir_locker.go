@@ -15,8 +15,7 @@ package events
 
 import (
 	"fmt"
-	"strings"
-	"github.com/runatlantis/atlantis/server/core/locking"
+	"github.com/gojekfarm/atlantis/server/core/locking"
 	"sync"
 )
 
@@ -49,7 +48,7 @@ type DefaultWorkingDirLocker struct {
 	// locks is a list of the keys that are locked. We then use prefix
 	// matching to determine if something is locked. It's naive but that's okay
 	// because there won't be many locks at one time.
-	locks []string
+	locks  []string
 	Locker locking.Locker
 }
 

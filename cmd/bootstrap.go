@@ -17,7 +17,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/runatlantis/atlantis/testdrive"
+	"github.com/gojekfarm/atlantis/testdrive"
 	"github.com/spf13/cobra"
 )
 

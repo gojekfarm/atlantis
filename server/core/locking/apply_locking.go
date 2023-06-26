@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/runatlantis/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/command"
 )
 
 //go:generate pegomock generate -m --use-experimental-model-gen --package mocks -o mocks/mock_apply_lock_checker.go ApplyLockChecker

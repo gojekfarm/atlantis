@@ -19,10 +19,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/runatlantis/atlantis/server/events"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/models"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/events"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestRenderErr(t *testing.T) {

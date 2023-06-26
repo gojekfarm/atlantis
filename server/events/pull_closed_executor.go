@@ -21,13 +21,13 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/logging"
 
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/core/locking"
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/events/vcs"
-	"github.com/runatlantis/atlantis/server/jobs"
+	"github.com/gojekfarm/atlantis/server/core/locking"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/events/vcs"
+	"github.com/gojekfarm/atlantis/server/jobs"
 )
 
 //go:generate pegomock generate -m --use-experimental-model-gen --package mocks -o mocks/mock_resource_cleaner.go ResourceCleaner

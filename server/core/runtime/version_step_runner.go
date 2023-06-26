@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 
 	"github.com/hashicorp/go-version"
-	"github.com/runatlantis/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/command"
 )
 
 // VersionStepRunner runs a version command given a ctx

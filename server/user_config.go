@@ -1,7 +1,7 @@
 package server
 
 import (
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/logging"
 )
 
 // UserConfig holds config values passed in by the user.

@@ -3,9 +3,9 @@ package server_test
 import (
 	"testing"
 
-	"github.com/runatlantis/atlantis/server"
-	"github.com/runatlantis/atlantis/server/logging"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server"
+	"github.com/gojekfarm/atlantis/server/logging"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestUserConfig_ToLogLevel(t *testing.T) {

@@ -18,13 +18,13 @@ import (
 	"testing"
 
 	. "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/core/locking"
-	"github.com/runatlantis/atlantis/server/core/locking/mocks"
-	"github.com/runatlantis/atlantis/server/events"
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/events/vcs"
-	"github.com/runatlantis/atlantis/server/logging"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/core/locking"
+	"github.com/gojekfarm/atlantis/server/core/locking/mocks"
+	"github.com/gojekfarm/atlantis/server/events"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/events/vcs"
+	"github.com/gojekfarm/atlantis/server/logging"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestDefaultProjectLocker_TryLockWhenLocked(t *testing.T) {

@@ -24,8 +24,8 @@ import (
 	"sync"
 
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/logging"
 	"golang.org/x/sync/semaphore"
 )
 

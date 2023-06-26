@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/runatlantis/atlantis/server/events"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/events"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 // Test starting and completing ops.

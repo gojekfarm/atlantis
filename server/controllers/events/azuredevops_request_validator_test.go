@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	. "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/controllers/events"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/controllers/events"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestAzureDevopsValidate_WithBasicAuthErr(t *testing.T) {

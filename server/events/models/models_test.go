@@ -17,9 +17,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/events/vcs"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/events/vcs"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestNewRepo_EmptyRepoFullName(t *testing.T) {

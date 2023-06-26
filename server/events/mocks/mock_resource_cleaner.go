@@ -8,7 +8,7 @@ import (
 	"time"
 
 	pegomock "github.com/petergtz/pegomock"
-	jobs "github.com/runatlantis/atlantis/server/jobs"
+	jobs "github.com/gojekfarm/atlantis/server/jobs"
 )
 
 type MockResourceCleaner struct {

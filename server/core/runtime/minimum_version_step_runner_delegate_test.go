@@ -5,9 +5,9 @@ import (
 
 	"github.com/hashicorp/go-version"
 	. "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/core/runtime/mocks"
-	"github.com/runatlantis/atlantis/server/events/command"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/core/runtime/mocks"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestRunMinimumVersionDelegate(t *testing.T) {

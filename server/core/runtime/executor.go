@@ -2,8 +2,8 @@ package runtime
 
 import (
 	version "github.com/hashicorp/go-version"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/logging"
 )
 
 //go:generate pegomock generate -m --use-experimental-model-gen --package mocks -o mocks/mock_versionedexecutorworkflow.go VersionedExecutorWorkflow

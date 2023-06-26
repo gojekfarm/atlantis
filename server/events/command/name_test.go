@@ -3,8 +3,8 @@ package command_test
 import (
 	"testing"
 
-	"github.com/runatlantis/atlantis/server/events/command"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestApplyCommand_String(t *testing.T) {

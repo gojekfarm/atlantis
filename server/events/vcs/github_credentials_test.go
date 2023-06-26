@@ -3,10 +3,10 @@ package vcs_test
 import (
 	"testing"
 
-	"github.com/runatlantis/atlantis/server/events/vcs"
-	"github.com/runatlantis/atlantis/server/events/vcs/fixtures"
-	"github.com/runatlantis/atlantis/server/logging"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/events/vcs"
+	"github.com/gojekfarm/atlantis/server/events/vcs/fixtures"
+	"github.com/gojekfarm/atlantis/server/logging"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestGithubClient_GetUser_AppSlug(t *testing.T) {

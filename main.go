@@ -19,8 +19,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/runatlantis/atlantis/cmd"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/cmd"
+	"github.com/gojekfarm/atlantis/server/logging"
 	"github.com/spf13/viper"
 )
 

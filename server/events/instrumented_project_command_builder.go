@@ -1,9 +1,9 @@
 package events
 
 import (
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/logging"
-	"github.com/runatlantis/atlantis/server/metrics"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/metrics"
 )
 
 type InstrumentedProjectCommandBuilder struct {

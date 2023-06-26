@@ -9,10 +9,10 @@ import (
 
 	"github.com/hashicorp/go-version"
 	"github.com/mohae/deepcopy"
-	"github.com/runatlantis/atlantis/server/core/config"
-	"github.com/runatlantis/atlantis/server/core/config/valid"
-	"github.com/runatlantis/atlantis/server/logging"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/core/config"
+	"github.com/gojekfarm/atlantis/server/core/config/valid"
+	"github.com/gojekfarm/atlantis/server/logging"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestNewGlobalCfg(t *testing.T) {

@@ -5,14 +5,14 @@ import (
 	"testing"
 
 	. "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/events"
-	eventMocks "github.com/runatlantis/atlantis/server/events/mocks"
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/events/vcs"
-	"github.com/runatlantis/atlantis/server/events/vcs/fixtures"
-	vcsMocks "github.com/runatlantis/atlantis/server/events/vcs/mocks"
-	"github.com/runatlantis/atlantis/server/logging"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/events"
+	eventMocks "github.com/gojekfarm/atlantis/server/events/mocks"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/events/vcs"
+	"github.com/gojekfarm/atlantis/server/events/vcs/fixtures"
+	vcsMocks "github.com/gojekfarm/atlantis/server/events/vcs/mocks"
+	"github.com/gojekfarm/atlantis/server/logging"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 // Test that if we don't have any existing files, we check out the repo with a github app.

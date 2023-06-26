@@ -24,13 +24,13 @@ import (
 	version "github.com/hashicorp/go-version"
 	"github.com/petergtz/pegomock"
 	. "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/cmd"
-	"github.com/runatlantis/atlantis/server/core/terraform"
-	"github.com/runatlantis/atlantis/server/core/terraform/mocks"
-	"github.com/runatlantis/atlantis/server/events/command"
-	jobmocks "github.com/runatlantis/atlantis/server/jobs/mocks"
-	"github.com/runatlantis/atlantis/server/logging"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/cmd"
+	"github.com/gojekfarm/atlantis/server/core/terraform"
+	"github.com/gojekfarm/atlantis/server/core/terraform/mocks"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	jobmocks "github.com/gojekfarm/atlantis/server/jobs/mocks"
+	"github.com/gojekfarm/atlantis/server/logging"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestMustConstraint_PanicsOnBadConstraint(t *testing.T) {

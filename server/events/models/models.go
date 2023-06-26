@@ -26,7 +26,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/logging"
 
 	"github.com/pkg/errors"
 )

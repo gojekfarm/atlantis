@@ -12,10 +12,10 @@ import (
 	"testing"
 
 	"github.com/mcdafydd/go-azuredevops/azuredevops"
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/events/vcs"
-	"github.com/runatlantis/atlantis/server/events/vcs/fixtures"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/events/vcs"
+	"github.com/gojekfarm/atlantis/server/events/vcs/fixtures"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestAzureDevopsClient_MergePull(t *testing.T) {

@@ -4,15 +4,15 @@ import (
 	"testing"
 
 	"github.com/hashicorp/go-version"
-	"github.com/runatlantis/atlantis/server/core/runtime"
-	"github.com/runatlantis/atlantis/server/core/terraform/mocks"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/models"
-	jobmocks "github.com/runatlantis/atlantis/server/jobs/mocks"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/core/runtime"
+	"github.com/gojekfarm/atlantis/server/core/terraform/mocks"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	jobmocks "github.com/gojekfarm/atlantis/server/jobs/mocks"
+	"github.com/gojekfarm/atlantis/server/logging"
 
 	. "github.com/petergtz/pegomock"
-	. "github.com/runatlantis/atlantis/testing"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestEnvStepRunner_Run(t *testing.T) {

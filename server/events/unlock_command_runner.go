@@ -1,8 +1,8 @@
 package events
 
 import (
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/vcs"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/vcs"
 )
 
 func NewUnlockCommandRunner(

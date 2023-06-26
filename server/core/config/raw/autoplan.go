@@ -1,7 +1,7 @@
 package raw
 
 import (
-	"github.com/runatlantis/atlantis/server/core/config/valid"
+	"github.com/gojekfarm/atlantis/server/core/config/valid"
 )
 
 // DefaultAutoPlanWhenModified is the default element in the when_modified

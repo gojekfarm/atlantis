@@ -6,7 +6,7 @@ import (
 
 	"github.com/hashicorp/go-version"
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/core/runtime/models"
+	"github.com/gojekfarm/atlantis/server/core/runtime/models"
 )
 
 //go:generate pegomock generate -m --use-experimental-model-gen --package mocks -o mocks/mock_version_path.go ExecutionVersionCache

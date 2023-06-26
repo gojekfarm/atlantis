@@ -9,7 +9,7 @@ import (
 	validation "github.com/go-ozzo/ozzo-validation"
 	version "github.com/hashicorp/go-version"
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/core/config/valid"
+	"github.com/gojekfarm/atlantis/server/core/config/valid"
 )
 
 const (

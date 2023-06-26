@@ -8,7 +8,7 @@ import (
 	"time"
 
 	pegomock "github.com/petergtz/pegomock"
-	models "github.com/runatlantis/atlantis/server/events/models"
+	models "github.com/gojekfarm/atlantis/server/events/models"
 )
 
 type MockPullApprovedChecker struct {

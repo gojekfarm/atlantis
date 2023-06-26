@@ -16,11 +16,11 @@ import (
 
 	"github.com/alicebob/miniredis/v2"
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/core/redis"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/core/redis"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/models"
 
-	. "github.com/runatlantis/atlantis/testing"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 var project = models.NewProject("owner/repo", "parent/child")

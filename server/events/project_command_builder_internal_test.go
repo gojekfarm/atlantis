@@ -7,16 +7,16 @@ import (
 
 	version "github.com/hashicorp/go-version"
 	. "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/core/config"
-	"github.com/runatlantis/atlantis/server/core/config/valid"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/matchers"
-	"github.com/runatlantis/atlantis/server/events/models"
-	vcsmocks "github.com/runatlantis/atlantis/server/events/vcs/mocks"
-	"github.com/runatlantis/atlantis/server/logging"
-	logging_matchers "github.com/runatlantis/atlantis/server/logging/mocks/matchers"
-	"github.com/runatlantis/atlantis/server/metrics"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/core/config"
+	"github.com/gojekfarm/atlantis/server/core/config/valid"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/matchers"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	vcsmocks "github.com/gojekfarm/atlantis/server/events/vcs/mocks"
+	"github.com/gojekfarm/atlantis/server/logging"
+	logging_matchers "github.com/gojekfarm/atlantis/server/logging/mocks/matchers"
+	"github.com/gojekfarm/atlantis/server/metrics"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 // Test different permutations of global and repo config.

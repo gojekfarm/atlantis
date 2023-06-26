@@ -3,8 +3,8 @@ package events_test
 import (
 	"testing"
 
-	"github.com/runatlantis/atlantis/server/events"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/events"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestNewTeamAllowListChecker(t *testing.T) {

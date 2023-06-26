@@ -3,8 +3,8 @@ package jobs
 import (
 	"sync"
 
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/logging"
 )
 
 type OutputBuffer struct {

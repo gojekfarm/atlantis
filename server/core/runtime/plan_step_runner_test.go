@@ -8,20 +8,20 @@ import (
 	"testing"
 
 	"github.com/hashicorp/go-version"
-	"github.com/runatlantis/atlantis/server/events/command"
-	mocks2 "github.com/runatlantis/atlantis/server/events/mocks"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	mocks2 "github.com/gojekfarm/atlantis/server/events/mocks"
 
 	. "github.com/petergtz/pegomock"
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/core/runtime"
-	runtimemodels "github.com/runatlantis/atlantis/server/core/runtime/models"
-	"github.com/runatlantis/atlantis/server/core/terraform/mocks"
-	matchers2 "github.com/runatlantis/atlantis/server/core/terraform/mocks/matchers"
-	"github.com/runatlantis/atlantis/server/events/mocks/matchers"
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/core/runtime"
+	runtimemodels "github.com/gojekfarm/atlantis/server/core/runtime/models"
+	"github.com/gojekfarm/atlantis/server/core/terraform/mocks"
+	matchers2 "github.com/gojekfarm/atlantis/server/core/terraform/mocks/matchers"
+	"github.com/gojekfarm/atlantis/server/events/mocks/matchers"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/logging"
 
-	. "github.com/runatlantis/atlantis/testing"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestRun_NoWorkspaceIn08(t *testing.T) {

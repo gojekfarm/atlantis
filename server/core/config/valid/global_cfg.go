@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	version "github.com/hashicorp/go-version"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/logging"
 )
 
 const MergeableApplyReq = "mergeable"

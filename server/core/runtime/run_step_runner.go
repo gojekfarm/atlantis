@@ -7,9 +7,9 @@ import (
 	"strings"
 
 	"github.com/hashicorp/go-version"
-	"github.com/runatlantis/atlantis/server/core/runtime/models"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/jobs"
+	"github.com/gojekfarm/atlantis/server/core/runtime/models"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/jobs"
 )
 
 // RunStepRunner runs custom commands.

@@ -8,7 +8,7 @@ import (
 	"time"
 
 	pegomock "github.com/petergtz/pegomock"
-	command "github.com/runatlantis/atlantis/server/events/command"
+	command "github.com/gojekfarm/atlantis/server/events/command"
 )
 
 type MockPreWorkflowHooksCommandRunner struct {

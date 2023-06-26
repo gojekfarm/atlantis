@@ -5,7 +5,7 @@ import (
 	"reflect"
 
 	"github.com/petergtz/pegomock"
-	models "github.com/runatlantis/atlantis/server/events/models"
+	models "github.com/gojekfarm/atlantis/server/events/models"
 )
 
 func AnyModelsPullRequestOptions() models.PullRequestOptions {

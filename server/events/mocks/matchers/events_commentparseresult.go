@@ -6,7 +6,7 @@ import (
 
 	"github.com/petergtz/pegomock"
 
-	events "github.com/runatlantis/atlantis/server/events"
+	events "github.com/gojekfarm/atlantis/server/events"
 )
 
 func AnyEventsCommentParseResult() events.CommentParseResult {

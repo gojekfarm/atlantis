@@ -5,8 +5,8 @@ package mocks
 
 import (
 	pegomock "github.com/petergtz/pegomock"
-	command "github.com/runatlantis/atlantis/server/events/command"
-	models "github.com/runatlantis/atlantis/server/events/models"
+	command "github.com/gojekfarm/atlantis/server/events/command"
+	models "github.com/gojekfarm/atlantis/server/events/models"
 	"reflect"
 	"time"
 )

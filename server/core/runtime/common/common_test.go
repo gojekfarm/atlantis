@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	. "github.com/runatlantis/atlantis/testing"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func Test_DeDuplicateExtraArgs(t *testing.T) {

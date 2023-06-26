@@ -8,8 +8,8 @@ import (
 	"time"
 
 	pegomock "github.com/petergtz/pegomock"
-	models "github.com/runatlantis/atlantis/server/events/models"
-	logging "github.com/runatlantis/atlantis/server/logging"
+	models "github.com/gojekfarm/atlantis/server/events/models"
+	logging "github.com/gojekfarm/atlantis/server/logging"
 )
 
 type MockWorkingDir struct {

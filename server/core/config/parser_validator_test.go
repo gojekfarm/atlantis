@@ -9,9 +9,9 @@ import (
 	"testing"
 
 	"github.com/hashicorp/go-version"
-	"github.com/runatlantis/atlantis/server/core/config"
-	"github.com/runatlantis/atlantis/server/core/config/valid"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/core/config"
+	"github.com/gojekfarm/atlantis/server/core/config/valid"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 var globalCfgArgs = valid.GlobalCfgArgs{

@@ -5,7 +5,7 @@ import (
 	"github.com/petergtz/pegomock"
 	"reflect"
 
-	command "github.com/runatlantis/atlantis/server/events/command"
+	command "github.com/gojekfarm/atlantis/server/events/command"
 )
 
 func AnyPtrToCommandLock() *command.Lock {

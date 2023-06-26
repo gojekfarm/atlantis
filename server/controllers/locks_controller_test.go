@@ -11,23 +11,23 @@ import (
 	"testing"
 	"time"
 
-	"github.com/runatlantis/atlantis/server/controllers"
-	"github.com/runatlantis/atlantis/server/controllers/templates"
-	tMocks "github.com/runatlantis/atlantis/server/controllers/templates/mocks"
-	"github.com/runatlantis/atlantis/server/core/db"
-	"github.com/runatlantis/atlantis/server/core/locking"
+	"github.com/gojekfarm/atlantis/server/controllers"
+	"github.com/gojekfarm/atlantis/server/controllers/templates"
+	tMocks "github.com/gojekfarm/atlantis/server/controllers/templates/mocks"
+	"github.com/gojekfarm/atlantis/server/core/db"
+	"github.com/gojekfarm/atlantis/server/core/locking"
 
 	"github.com/gorilla/mux"
 	. "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/events"
+	"github.com/gojekfarm/atlantis/server/events"
 
-	"github.com/runatlantis/atlantis/server/core/locking/mocks"
-	"github.com/runatlantis/atlantis/server/events/command"
-	mocks2 "github.com/runatlantis/atlantis/server/events/mocks"
-	"github.com/runatlantis/atlantis/server/events/models"
-	vcsmocks "github.com/runatlantis/atlantis/server/events/vcs/mocks"
-	"github.com/runatlantis/atlantis/server/logging"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/core/locking/mocks"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	mocks2 "github.com/gojekfarm/atlantis/server/events/mocks"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	vcsmocks "github.com/gojekfarm/atlantis/server/events/vcs/mocks"
+	"github.com/gojekfarm/atlantis/server/logging"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func AnyRepo() models.Repo {

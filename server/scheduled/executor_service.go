@@ -2,7 +2,7 @@ package scheduled
 
 import (
 	"context"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/logging"
 	"github.com/uber-go/tally"
 	"os"
 	"os/signal"

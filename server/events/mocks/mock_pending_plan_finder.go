@@ -8,7 +8,7 @@ import (
 	"time"
 
 	pegomock "github.com/petergtz/pegomock"
-	events "github.com/runatlantis/atlantis/server/events"
+	events "github.com/gojekfarm/atlantis/server/events"
 )
 
 type MockPendingPlanFinder struct {

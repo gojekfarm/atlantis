@@ -7,10 +7,10 @@ import (
 
 	"github.com/hashicorp/go-version"
 	. "github.com/petergtz/pegomock"
-	cache_mocks "github.com/runatlantis/atlantis/server/core/runtime/cache/mocks"
-	"github.com/runatlantis/atlantis/server/core/runtime/models"
-	models_mocks "github.com/runatlantis/atlantis/server/core/runtime/models/mocks"
-	. "github.com/runatlantis/atlantis/testing"
+	cache_mocks "github.com/gojekfarm/atlantis/server/core/runtime/cache/mocks"
+	"github.com/gojekfarm/atlantis/server/core/runtime/models"
+	models_mocks "github.com/gojekfarm/atlantis/server/core/runtime/models/mocks"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestExecutionVersionDiskLayer(t *testing.T) {

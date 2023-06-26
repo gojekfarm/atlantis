@@ -9,7 +9,7 @@ import (
 	"unicode/utf8"
 
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/events/models"
 	validator "gopkg.in/go-playground/validator.v9"
 )
 

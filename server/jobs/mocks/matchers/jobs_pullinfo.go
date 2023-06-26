@@ -6,7 +6,7 @@ import (
 
 	"github.com/petergtz/pegomock"
 
-	jobs "github.com/runatlantis/atlantis/server/jobs"
+	jobs "github.com/gojekfarm/atlantis/server/jobs"
 )
 
 func AnyJobsPullInfo() jobs.PullInfo {

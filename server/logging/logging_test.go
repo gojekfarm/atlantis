@@ -16,7 +16,7 @@ package logging_test
 import (
 	"testing"
 
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/logging"
 	"github.com/stretchr/testify/assert"
 )
 

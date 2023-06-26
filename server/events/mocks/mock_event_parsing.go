@@ -7,7 +7,7 @@ import (
 	github "github.com/google/go-github/v31/github"
 	azuredevops "github.com/mcdafydd/go-azuredevops/azuredevops"
 	pegomock "github.com/petergtz/pegomock"
-	models "github.com/runatlantis/atlantis/server/events/models"
+	models "github.com/gojekfarm/atlantis/server/events/models"
 	go_gitlab "github.com/xanzy/go-gitlab"
 	"reflect"
 	"time"

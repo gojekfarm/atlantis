@@ -6,13 +6,13 @@ import (
 
 	"github.com/google/go-github/v31/github"
 	. "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/core/locking"
-	"github.com/runatlantis/atlantis/server/events"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/events/models/fixtures"
-	"github.com/runatlantis/atlantis/server/logging"
-	"github.com/runatlantis/atlantis/server/metrics"
+	"github.com/gojekfarm/atlantis/server/core/locking"
+	"github.com/gojekfarm/atlantis/server/events"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/events/models/fixtures"
+	"github.com/gojekfarm/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/metrics"
 )
 
 func TestApplyCommandRunner_IsLocked(t *testing.T) {

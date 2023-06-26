@@ -6,7 +6,7 @@ import (
 
 	"github.com/petergtz/pegomock"
 
-	webhooks "github.com/runatlantis/atlantis/server/events/webhooks"
+	webhooks "github.com/gojekfarm/atlantis/server/events/webhooks"
 )
 
 func AnyWebhooksApplyResult() webhooks.ApplyResult {

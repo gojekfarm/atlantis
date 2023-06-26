@@ -8,7 +8,7 @@ import (
 	"time"
 
 	pegomock "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/command"
 )
 
 type MockApplyRequirement struct {

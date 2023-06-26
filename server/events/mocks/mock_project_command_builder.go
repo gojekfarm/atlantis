@@ -8,8 +8,8 @@ import (
 	"time"
 
 	pegomock "github.com/petergtz/pegomock"
-	events "github.com/runatlantis/atlantis/server/events"
-	"github.com/runatlantis/atlantis/server/events/command"
+	events "github.com/gojekfarm/atlantis/server/events"
+	"github.com/gojekfarm/atlantis/server/events/command"
 )
 
 type MockProjectCommandBuilder struct {

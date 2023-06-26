@@ -8,8 +8,8 @@ import (
 	"time"
 
 	pegomock "github.com/petergtz/pegomock"
-	events "github.com/runatlantis/atlantis/server/events"
-	models "github.com/runatlantis/atlantis/server/events/models"
+	events "github.com/gojekfarm/atlantis/server/events"
+	models "github.com/gojekfarm/atlantis/server/events/models"
 )
 
 type MockCommandRunner struct {

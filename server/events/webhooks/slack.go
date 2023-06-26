@@ -18,7 +18,7 @@ import (
 
 	"fmt"
 
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/logging"
 )
 
 // SlackWebhook sends webhooks to Slack.

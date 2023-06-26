@@ -23,11 +23,11 @@ import (
 
 	"github.com/google/go-github/v31/github"
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/core/config"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/events/vcs/common"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/core/config"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/events/vcs/common"
+	"github.com/gojekfarm/atlantis/server/logging"
 	"github.com/shurcooL/githubv4"
 )
 

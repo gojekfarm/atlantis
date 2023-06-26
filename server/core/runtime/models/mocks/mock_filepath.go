@@ -8,7 +8,7 @@ import (
 	"time"
 
 	pegomock "github.com/petergtz/pegomock"
-	models "github.com/runatlantis/atlantis/server/core/runtime/models"
+	models "github.com/gojekfarm/atlantis/server/core/runtime/models"
 )
 
 type MockFilePath struct {

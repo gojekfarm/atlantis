@@ -5,12 +5,12 @@ import (
 	"testing"
 
 	. "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/jobs"
-	"github.com/runatlantis/atlantis/server/jobs/mocks"
-	"github.com/runatlantis/atlantis/server/jobs/mocks/matchers"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/jobs"
+	"github.com/gojekfarm/atlantis/server/jobs/mocks"
+	"github.com/gojekfarm/atlantis/server/jobs/mocks/matchers"
+	. "github.com/gojekfarm/atlantis/testing"
 	"github.com/stretchr/testify/assert"
 )
 

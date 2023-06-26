@@ -3,8 +3,8 @@ package models_test
 import (
 	"testing"
 
-	"github.com/runatlantis/atlantis/server/events/models"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestStatus_String(t *testing.T) {

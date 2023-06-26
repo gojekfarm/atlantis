@@ -2,7 +2,7 @@ package vcs
 
 import (
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/events/models"
 )
 
 type PullReqStatusFetcher interface {

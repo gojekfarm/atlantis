@@ -8,7 +8,7 @@ import (
 	"time"
 
 	pegomock "github.com/petergtz/pegomock"
-	webhooks "github.com/runatlantis/atlantis/server/events/webhooks"
+	webhooks "github.com/gojekfarm/atlantis/server/events/webhooks"
 )
 
 type MockSlackClient struct {

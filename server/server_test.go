@@ -26,13 +26,13 @@ import (
 
 	"github.com/gorilla/mux"
 	. "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server"
-	"github.com/runatlantis/atlantis/server/controllers/templates"
-	tMocks "github.com/runatlantis/atlantis/server/controllers/templates/mocks"
-	"github.com/runatlantis/atlantis/server/core/locking/mocks"
-	"github.com/runatlantis/atlantis/server/events/models"
-	"github.com/runatlantis/atlantis/server/logging"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server"
+	"github.com/gojekfarm/atlantis/server/controllers/templates"
+	tMocks "github.com/gojekfarm/atlantis/server/controllers/templates/mocks"
+	"github.com/gojekfarm/atlantis/server/core/locking/mocks"
+	"github.com/gojekfarm/atlantis/server/events/models"
+	"github.com/gojekfarm/atlantis/server/logging"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestNewServer(t *testing.T) {

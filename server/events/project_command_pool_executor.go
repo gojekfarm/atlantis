@@ -5,7 +5,7 @@ import (
 	"sync"
 
 	"github.com/remeh/sizedwaitgroup"
-	"github.com/runatlantis/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/command"
 )
 
 type prjCmdRunnerFunc func(ctx command.ProjectContext) command.ProjectResult

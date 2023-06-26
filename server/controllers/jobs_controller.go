@@ -6,11 +6,11 @@ import (
 	"net/url"
 
 	"github.com/gorilla/mux"
-	"github.com/runatlantis/atlantis/server/controllers/templates"
-	"github.com/runatlantis/atlantis/server/controllers/websocket"
-	"github.com/runatlantis/atlantis/server/core/locking"
-	"github.com/runatlantis/atlantis/server/logging"
-	"github.com/runatlantis/atlantis/server/metrics"
+	"github.com/gojekfarm/atlantis/server/controllers/templates"
+	"github.com/gojekfarm/atlantis/server/controllers/websocket"
+	"github.com/gojekfarm/atlantis/server/core/locking"
+	"github.com/gojekfarm/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/metrics"
 	"github.com/uber-go/tally"
 )
 

@@ -8,8 +8,8 @@ import (
 	"time"
 
 	pegomock "github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/events/command"
-	jobs "github.com/runatlantis/atlantis/server/jobs"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	jobs "github.com/gojekfarm/atlantis/server/jobs"
 )
 
 type MockProjectCommandOutputHandler struct {

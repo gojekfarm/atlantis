@@ -6,7 +6,7 @@ import (
 
 	"github.com/petergtz/pegomock"
 
-	logging "github.com/runatlantis/atlantis/server/logging"
+	logging "github.com/gojekfarm/atlantis/server/logging"
 )
 
 func AnyPtrToLoggingSimpleLogger() logging.SimpleLogging {

@@ -5,8 +5,8 @@ import (
 
 	validation "github.com/go-ozzo/ozzo-validation"
 	version "github.com/hashicorp/go-version"
-	"github.com/runatlantis/atlantis/server/core/config/valid"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/core/config/valid"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 func TestConfig_FindProjectsByDir(t *testing.T) {

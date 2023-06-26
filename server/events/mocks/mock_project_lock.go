@@ -8,9 +8,9 @@ import (
 	"time"
 
 	pegomock "github.com/petergtz/pegomock"
-	events "github.com/runatlantis/atlantis/server/events"
-	models "github.com/runatlantis/atlantis/server/events/models"
-	logging "github.com/runatlantis/atlantis/server/logging"
+	events "github.com/gojekfarm/atlantis/server/events"
+	models "github.com/gojekfarm/atlantis/server/events/models"
+	logging "github.com/gojekfarm/atlantis/server/logging"
 )
 
 type MockProjectLocker struct {

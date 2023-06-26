@@ -8,9 +8,9 @@ import (
 	"sync"
 
 	"github.com/pkg/errors"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/terraform/ansi"
-	"github.com/runatlantis/atlantis/server/jobs"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/terraform/ansi"
+	"github.com/gojekfarm/atlantis/server/jobs"
 )
 
 // Setting the buffer size to 10mb

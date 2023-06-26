@@ -5,7 +5,7 @@ import (
 	"reflect"
 
 	"github.com/petergtz/pegomock"
-	"github.com/runatlantis/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/command"
 )
 
 func AnyModelsProjectResult() command.ProjectResult {

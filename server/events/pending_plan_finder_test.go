@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/runatlantis/atlantis/server/events"
-	. "github.com/runatlantis/atlantis/testing"
+	"github.com/gojekfarm/atlantis/server/events"
+	. "github.com/gojekfarm/atlantis/testing"
 )
 
 // If the dir doesn't exist should get an error.

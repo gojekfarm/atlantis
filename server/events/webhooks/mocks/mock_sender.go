@@ -8,8 +8,8 @@ import (
 	"time"
 
 	pegomock "github.com/petergtz/pegomock"
-	webhooks "github.com/runatlantis/atlantis/server/events/webhooks"
-	logging "github.com/runatlantis/atlantis/server/logging"
+	webhooks "github.com/gojekfarm/atlantis/server/events/webhooks"
+	logging "github.com/gojekfarm/atlantis/server/logging"
 )
 
 type MockSender struct {

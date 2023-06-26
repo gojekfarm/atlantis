@@ -5,7 +5,7 @@ package mocks
 
 import (
 	pegomock "github.com/petergtz/pegomock"
-	locking "github.com/runatlantis/atlantis/server/core/locking"
+	locking "github.com/gojekfarm/atlantis/server/core/locking"
 	"reflect"
 	"time"
 )

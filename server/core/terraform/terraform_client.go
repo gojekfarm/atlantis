@@ -31,11 +31,11 @@ import (
 	"github.com/mitchellh/go-homedir"
 	"github.com/pkg/errors"
 
-	"github.com/runatlantis/atlantis/server/core/runtime/models"
-	"github.com/runatlantis/atlantis/server/events/command"
-	"github.com/runatlantis/atlantis/server/events/terraform/ansi"
-	"github.com/runatlantis/atlantis/server/jobs"
-	"github.com/runatlantis/atlantis/server/logging"
+	"github.com/gojekfarm/atlantis/server/core/runtime/models"
+	"github.com/gojekfarm/atlantis/server/events/command"
+	"github.com/gojekfarm/atlantis/server/events/terraform/ansi"
+	"github.com/gojekfarm/atlantis/server/jobs"
+	"github.com/gojekfarm/atlantis/server/logging"
 )
 
 var LogStreamingValidCmds = [...]string{"init", "plan", "apply"}

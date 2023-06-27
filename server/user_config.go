@@ -32,6 +32,7 @@ type UserConfig struct {
 	EnablePolicyChecksFlag          bool   `mapstructure:"enable-policy-checks"`
 	EnableRegExpCmd                 bool   `mapstructure:"enable-regexp-cmd"`
 	EnableDiffMarkdownFormat        bool   `mapstructure:"enable-diff-markdown-format"`
+	EnableServerProfiling           bool   `mapstructure:"enable-server-profiling"`
 	GithubAllowMergeableBypassApply bool   `mapstructure:"gh-allow-mergeable-bypass-apply"`
 	GithubHostname                  string `mapstructure:"gh-hostname"`
 	GithubToken                     string `mapstructure:"gh-token"`

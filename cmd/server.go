@@ -63,6 +63,7 @@ const (
 	EnablePolicyChecksFlag      = "enable-policy-checks"
 	EnableRegExpCmdFlag         = "enable-regexp-cmd"
 	EnableDiffMarkdownFormat    = "enable-diff-markdown-format"
+	EnableServerProfiling       = "enable-server-profiling"
 	GHHostnameFlag              = "gh-hostname"
 	GHTeamAllowlistFlag         = "gh-team-allowlist"
 	GHTokenFlag                 = "gh-token"
@@ -395,6 +396,10 @@ var boolFlags = map[string]boolFlag{
 	},
 	EnableDiffMarkdownFormat: {
 		description:  "Enable Atlantis to format Terraform plan output into a markdown-diff friendly format for color-coding purposes.",
+		defaultValue: false,
+	},
+	EnableServerProfiling: {
+		description:  "Enables profiler",
 		defaultValue: false,
 	},
 	GHAllowMergeableBypassApply: {

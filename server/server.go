@@ -22,6 +22,7 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"net/http/pprof"
 	"net/url"
 	"os"
 	"os/signal"
@@ -31,7 +32,6 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/mitchellh/go-homedir"
 	cfg "github.com/gojekfarm/atlantis/server/core/config"
 	"github.com/gojekfarm/atlantis/server/core/config/valid"
 	"github.com/gojekfarm/atlantis/server/core/db"
@@ -39,12 +39,11 @@ import (
 	"github.com/gojekfarm/atlantis/server/jobs"
 	"github.com/gojekfarm/atlantis/server/metrics"
 	"github.com/gojekfarm/atlantis/server/scheduled"
+	"github.com/mitchellh/go-homedir"
 	"github.com/uber-go/tally"
 	"github.com/uber-go/tally/prometheus"
 
 	assetfs "github.com/elazarl/go-bindata-assetfs"
-	"github.com/gorilla/mux"
-	"github.com/pkg/errors"
 	"github.com/gojekfarm/atlantis/server/controllers"
 	events_controllers "github.com/gojekfarm/atlantis/server/controllers/events"
 	"github.com/gojekfarm/atlantis/server/controllers/templates"
@@ -62,6 +61,8 @@ import (
 	"github.com/gojekfarm/atlantis/server/events/webhooks"
 	"github.com/gojekfarm/atlantis/server/logging"
 	"github.com/gojekfarm/atlantis/server/static"
+	"github.com/gorilla/mux"
+	"github.com/pkg/errors"
 	"github.com/urfave/cli"
 	"github.com/urfave/negroni"
 )
@@ -118,6 +119,7 @@ type Server struct {
 	WebPassword                    string
 	ProjectCmdOutputHandler        jobs.ProjectCommandOutputHandler
 	ScheduledExecutorService       *scheduled.ExecutorService
+	EnableServerProfiling          bool
 }
 
 // Config holds config for server that isn't passed in by the user.
@@ -143,6 +145,13 @@ type WebhookConfig struct {
 	// Channel is the channel to send this webhook to. It only applies to
 	// slack webhooks. Should be without '#'.
 	Channel string `mapstructure:"channel"`
+}
+
+func AttachProfiler(router *mux.Router) {
+	router.HandleFunc("/debug/pprof/", pprof.Index)
+	router.HandleFunc("/debug/pprof/cmdline", pprof.Cmdline)
+	router.HandleFunc("/debug/pprof/profile", pprof.Profile)
+	router.HandleFunc("/debug/pprof/symbol", pprof.Symbol)
 }
 
 // NewServer returns a new server. If there are issues starting the server or
@@ -838,6 +847,7 @@ func NewServer(userConfig UserConfig, config Config) (*Server, error) {
 		WebUsername:                    userConfig.WebUsername,
 		WebPassword:                    userConfig.WebPassword,
 		ScheduledExecutorService:       scheduledExecutorService,
+		EnableServerProfiling:          userConfig.EnableServerProfiling,
 	}, nil
 }
 
@@ -846,6 +856,10 @@ func (s *Server) Start() error {
 	s.Router.HandleFunc("/", s.Index).Methods("GET").MatcherFunc(func(r *http.Request, rm *mux.RouteMatch) bool {
 		return r.URL.Path == "/" || r.URL.Path == "/index.html"
 	})
+
+	if s.EnableServerProfiling {
+		AttachProfiler(s.Router)
+	}
 	s.Router.HandleFunc("/healthz", s.Healthz).Methods("GET")
 	s.Router.HandleFunc("/status", s.StatusController.Get).Methods("GET")
 	s.Router.PathPrefix("/static/").Handler(http.FileServer(&assetfs.AssetFS{Asset: static.Asset, AssetDir: static.AssetDir, AssetInfo: static.AssetInfo}))

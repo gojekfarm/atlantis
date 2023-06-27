@@ -20,13 +20,13 @@ import (
 	"path/filepath"
 	"strings"
 
-	homedir "github.com/mitchellh/go-homedir"
-	"github.com/moby/moby/pkg/fileutils"
-	"github.com/pkg/errors"
 	"github.com/gojekfarm/atlantis/server"
 	"github.com/gojekfarm/atlantis/server/core/config/valid"
 	"github.com/gojekfarm/atlantis/server/events/vcs/bitbucketcloud"
 	"github.com/gojekfarm/atlantis/server/logging"
+	homedir "github.com/mitchellh/go-homedir"
+	"github.com/moby/moby/pkg/fileutils"
+	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

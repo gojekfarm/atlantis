@@ -19,16 +19,16 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/google/go-github/v31/github"
-	"github.com/mcdafydd/go-azuredevops/azuredevops"
-	"github.com/microcosm-cc/bluemonday"
-	"github.com/pkg/errors"
 	"github.com/gojekfarm/atlantis/server/events"
 	"github.com/gojekfarm/atlantis/server/events/models"
 	"github.com/gojekfarm/atlantis/server/events/vcs"
 	"github.com/gojekfarm/atlantis/server/events/vcs/bitbucketcloud"
 	"github.com/gojekfarm/atlantis/server/events/vcs/bitbucketserver"
 	"github.com/gojekfarm/atlantis/server/logging"
+	"github.com/google/go-github/v31/github"
+	"github.com/mcdafydd/go-azuredevops/azuredevops"
+	"github.com/microcosm-cc/bluemonday"
+	"github.com/pkg/errors"
 	"github.com/uber-go/tally"
 	gitlab "github.com/xanzy/go-gitlab"
 )
@@ -104,6 +104,10 @@ func (e *VCSEventsController) Post(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 		e.Logger.Debug("handling GitLab post")
+		scope := e.Scope.SubScope("gitlab_post")
+		timer := scope.Timer("execution_time").Start()
+		defer timer.Stop()
+
 		e.handleGitlabPost(w, r)
 		return
 	} else if r.Header.Get(bitbucketEventTypeHeader) != "" {
@@ -472,7 +476,10 @@ func (e *VCSEventsController) handlePullRequestEvent(logger logging.SimpleLoggin
 }
 
 func (e *VCSEventsController) handleGitlabPost(w http.ResponseWriter, r *http.Request) {
+
+	timer := e.Scope.SubScope("gitlab_parser_validator").Timer("execution_time").Start()
 	event, err := e.GitlabRequestParserValidator.ParseAndValidate(r, e.GitlabWebhookSecret)
+	timer.Stop()
 	if err != nil {
 		e.respond(w, logging.Warn, http.StatusBadRequest, err.Error())
 		return
@@ -482,11 +489,21 @@ func (e *VCSEventsController) handleGitlabPost(w http.ResponseWriter, r *http.Re
 	switch event := event.(type) {
 	case gitlab.MergeCommentEvent:
 		e.Logger.Debug("handling as comment event")
+
+		scope := e.Scope.SubScope("merge_comment_event")
+		timer := scope.Timer("execution_time").Start()
+		defer timer.Stop()
 		e.HandleGitlabCommentEvent(w, event)
 	case gitlab.MergeEvent:
+		scope := e.Scope.SubScope("merge_event")
+		timer := scope.Timer("execution_time").Start()
+		defer timer.Stop()
 		e.Logger.Debug("handling as pull request event")
 		e.HandleGitlabMergeRequestEvent(w, event)
 	case gitlab.CommitCommentEvent:
+		scope := e.Scope.SubScope("commit_comment_event")
+		timer := scope.Timer("execution_time").Start()
+		defer timer.Stop()
 		e.Logger.Debug("comments on commits are not supported, only comments on merge requests")
 		e.respond(w, logging.Debug, http.StatusOK, "Ignoring comment on commit event")
 	default:

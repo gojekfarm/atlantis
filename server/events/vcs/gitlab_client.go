@@ -310,13 +310,17 @@ func (g *GitlabClient) PullIsMergeable(repo models.Repo, pull models.PullRequest
 		return false, err
 	}
 
-	if ((ok && (mr.DetailedMergeStatus == "mergeable" || mr.DetailedMergeStatus == "ci_still_running")) ||
-		(!ok && mr.MergeStatus == "can_be_merged")) &&
-		mr.ApprovalsBeforeMerge <= 0 &&
-		mr.BlockingDiscussionsResolved &&
-		!mr.WorkInProgress &&
-		(allowSkippedPipeline || !isPipelineSkipped) {
-		return true, nil
+	retryLimit := 6
+	for attempt := 0; attempt < retryLimit; attempt++ {
+		if ((ok && (mr.DetailedMergeStatus == "mergeable" || mr.DetailedMergeStatus == "ci_still_running")) ||
+			(!ok && mr.DetailedMergeStatus == "can_be_merged")) &&
+			mr.ApprovalsBeforeMerge <= 0 &&
+			mr.BlockingDiscussionsResolved &&
+			!mr.WorkInProgress &&
+			(allowSkippedPipeline || !isPipelineSkipped) {
+			return true, nil
+		}
+		time.Sleep(10 * time.Second)
 	}
 	return false, nil
 }

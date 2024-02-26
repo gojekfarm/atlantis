@@ -310,7 +310,7 @@ func (g *GitlabClient) PullIsMergeable(repo models.Repo, pull models.PullRequest
 		return false, err
 	}
 
-	retryLimit := 3
+	retryLimit := 6
 	for attempt := 0; attempt < retryLimit; attempt++ {
 		if ((ok && (mr.DetailedMergeStatus == "mergeable" || mr.DetailedMergeStatus == "ci_still_running")) ||
 			(!ok && mr.DetailedMergeStatus == "can_be_merged")) &&

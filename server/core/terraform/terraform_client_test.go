@@ -412,7 +412,7 @@ terraform {
 			Exp: map[string]string{
 				"project1": expected,
 			},
-			IsExact: version[0] != "="[0],
+			IsExact: version[0] == "="[0],
 		}
 	}
 
